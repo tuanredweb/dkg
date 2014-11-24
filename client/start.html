@@ -35,18 +35,36 @@
 	</script>
 	<script>
 		jQuery(document).ready(function($) {
-			$('.left .inner').animate({
+	
+			$('.popup-content').animate({
 				top: 0,
 				opacity: 1},
-				500, function() {
-				countTime();
+				900, function() {
+				$('.background').fadeIn(100);
 			});
+
+			$('.popup-content button').click(function(event) {
+				$('.background').fadeOut(300);
+				$('.popup-content').animate({
+					top: -2735,
+					opacity: 0},
+					500, function(){
+						$('.left .inner').animate({
+						top: 0,
+						opacity: 1},
+						500, function() {
+						countTime();
+					});
+				});
+			});
+
 		});
 	</script>
 
 </head>
 <body>	
 	<img src="images/bg2.png" style="width:100%;height:auto;z-index:2;position:absolute;bottom:0;"/>
+	<div class="background"></div>
 	<div class="wrapper">
 		<div class="container">
 					<div class="left col-md-6">
@@ -60,6 +78,13 @@
 							<img class="snowman" src="images/snowman.png" style="width:100%;height:auto;"/>
 						</div>
 					</div>
+		</div>
+	</div>
+	<div class="popup col-md-5">
+		<div class="popup-content">
+			<img class="img-popup" src="images/popup.png" style="width:100%;height:auto;"/>
+			<input type="text" class="name" name="name" placeholder="Enter your name here" autocomplete="off">
+			<button class="button" type="submit">start</button>
 		</div>
 	</div>
 </body>

@@ -8,7 +8,7 @@
 	<link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
 	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
-	<link href="css/game.css" rel="stylesheet" type="text/css">
+	<link href="css/end.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
 	
@@ -23,6 +23,27 @@
 	<script src="libraries/preloadjs-0.4.1.min.js"></script>
 	<script src="libraries/preloadjs-NEXT.min.js"></script>
 
+	<script src="scripts/snowstorm.js"></script>
+
+	<script>
+		snowStorm.snowColor = '#fff';   // blue-ish snow!?
+		snowStorm.flakesMaxActive = 96;    // show more snow on screen at once
+		snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
+		snowStorm.followMouse = false;
+		snowStorm.vMaxX = 0;
+		snowStorm.vMaxY = 6;
+	</script>
+	<script>
+		jQuery(document).ready(function($) {
+
+					$('.left .inner').animate({
+						top: 0,
+						opacity: 1},
+						1000, function() {
+						/* stuff to do after animation is complete */
+					});
+		});
+	</script>
 	<script>
 		$(document).ready(function() {
 			function beeLeft() {
@@ -34,26 +55,26 @@
 		    beeRight();
 		});
 	</script>
-
 </head>
 <body>	
-	<img src="images/bg2.jpg" style="width:100%;height:auto;z-index:2;position:absolute;"/>
-	<div class="wrapper">
-		<div class="container">
-					<div class="left col-md-2">
+	<img src="images/bg3.jpg" style="width:100%;height:auto;z-index:0;position:absolute;"/>
+					<div class="left-fixed">
 						<div class="inner">
 							<img class="animal" src="images/thuanloc.png" style="width:70%;height:auto;position:absolute;bottom: 100px;"/>
 						</div>
 					</div>
-					<div class="center col-md-8">
-						<div class="inner-game">
-							<canvas id="game" style="display:block; width:100%;height:100%;">
-								
-							</canvas>
+	<div class="wrapper">
+		<div class="container">
+					<div class="left col-md-6">
+						<div class="inner">
+							<img class="start" src="images/end.png" style="width:100%;height:auto;"/>
+							<p class="hour"><span><span id="m">00</span> : <span id="s">00</span></span></p>
 						</div>
 					</div>
-					<div class="right col-md-2">
-
+					<div class="right col-md-5">
+						<div class="col-md-8 inner">
+							<img class="snowman" src="images/snowman.png" style="width:100%;height:auto;"/>
+						</div>
 					</div>
 		</div>
 	</div>
