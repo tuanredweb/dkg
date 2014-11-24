@@ -1,0 +1,168 @@
+/* basic scrollbar styling */
+/* vertical scrollbar */
+.mCSB_container{
+	width:auto;
+	overflow:hidden;
+}
+.right-cnt .content .mCSB_container { width:400px;}
+.mCSB_container.mCS_no_scrollbar{
+	margin-right:0;
+}
+.mCustomScrollBox{
+	width: 110% !important;
+	max-width: 110% !important;
+}
+/*
+.mCSB_container{
+	width: 92% !important;
+	margin-top: 15px;
+}
+*/
+.mCustomScrollBox .mCSB_scrollTools{
+	width:18px;
+	height:100%;
+	top:0;
+	right:0;
+	background: url(../images/website/corrected-scroll-bar-left.png) no-repeat;
+}
+.mCSB_scrollTools .mCSB_draggerContainer{
+	height:320px; width:18px;
+}
+/*.mCSB_scrollTools .mCSB_draggerRail{
+	width:2px;
+	height:100%;
+	margin:0 auto;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+}*/
+.mCSB_scrollTools .mCSB_dragger{
+	cursor:pointer;
+	width:100%;
+	height:52px !important;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+	width:30px;
+	height:37px;
+	background:url(../images/website/corrected-scroll-bar-circle.png) 0 0 no-repeat;
+	margin:0 auto 0 auto;
+	right: 14px !important;
+}
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown{
+	display:none !important;
+}
+.mCSB_scrollTools .mCSB_buttonDown{
+	bottom:0;
+}
+/* horizontal scrollbar */
+.mCSB_horizontal .mCSB_container{
+	height:auto;
+	margin-right:0;
+	margin-bottom:30px;
+	overflow:hidden;
+}
+.mCSB_horizontal .mCSB_container.mCS_no_scrollbar{
+	margin-bottom:0;
+}
+.mCSB_horizontal.mCustomScrollBox .mCSB_scrollTools{
+	width:100%;
+	height:16px;
+	top:auto;
+	right:auto;
+	bottom:0;
+	left:0;
+	overflow:hidden;
+}
+.mCSB_horizontal .mCSB_scrollTools .mCSB_draggerContainer{
+	height:100%;
+	width:auto;
+	overflow:hidden;
+}
+.mCSB_horizontal .mCSB_scrollTools .mCSB_buttonLeft+.mCSB_draggerContainer{
+	padding-bottom:0;
+	padding-right:20px;
+}
+/*.mCSB_horizontal .mCSB_scrollTools .mCSB_draggerRail{
+	width:100%;
+	height:2px;
+	margin:7px 0;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+}*/
+.mCSB_horizontal .mCSB_scrollTools .mCSB_dragger{
+	width:30px;
+	height:100%;
+}
+.mCSB_horizontal .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+	width:100%;
+	height:4px;
+	margin:6px auto;
+}
+.mCSB_horizontal .mCSB_scrollTools .mCSB_buttonLeft,
+.mCSB_horizontal .mCSB_scrollTools .mCSB_buttonRight{
+	width:20px;
+	height:100%;
+	overflow:hidden;
+	margin:0 auto;
+	cursor:pointer;
+	float:left;
+}
+.mCSB_horizontal .mCSB_scrollTools .mCSB_buttonRight{
+	right:0;
+	bottom:auto;
+	margin-left:-40px;
+	margin-top:-16px;
+	float:right;
+}
+
+/* default scrollbar colors and backgrounds */
+/*.mCSB_scrollTools .mCSB_draggerRail{
+	background:#000;
+	background:rgba(0,0,0,0.4);
+	filter:"alpha(opacity=40)"; -ms-filter:"alpha(opacity=40)";
+}
+
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{
+	background:#734231; 
+	border:#bd7453 solid 1px;
+}
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{
+	background:#734231; 
+	border:#bd7453 solid 1px;
+}*/
+/*
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown {
+	background-image:url(../images/mcs-button.png);
+	background-repeat:no-repeat;
+	width:13px; height:13px;
+}
+.mCSB_scrollTools .mCSB_buttonUp{
+	background-position:0 0;
+}
+.mCSB_scrollTools .mCSB_buttonUp:hover{
+	background-position:-18px 0;
+}
+.mCSB_scrollTools .mCSB_buttonDown{
+	background-position:0 -18px;
+}
+.mCSB_scrollTools .mCSB_buttonDown:hover{
+	background-position:-18px -18px;
+}
+.mCSB_scrollTools .mCSB_buttonUp:hover,
+.mCSB_scrollTools .mCSB_buttonDown:hover,
+.mCSB_scrollTools .mCSB_buttonLeft:hover,
+.mCSB_scrollTools .mCSB_buttonRight:hover{
+	opacity:0.75;
+	filter:"alpha(opacity=75)"; -ms-filter:"alpha(opacity=75)";
+}
+.mCSB_scrollTools .mCSB_buttonUp:active,
+.mCSB_scrollTools .mCSB_buttonDown:active,
+.mCSB_scrollTools .mCSB_buttonLeft:active,
+.mCSB_scrollTools .mCSB_buttonRight:active{
+	opacity:0.9;
+	filter:"alpha(opacity=90)"; -ms-filter:"alpha(opacity=90)";
+}*/
